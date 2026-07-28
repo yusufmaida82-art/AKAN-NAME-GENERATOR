@@ -20,4 +20,10 @@ body{
     box-shadow:0 0 10px rgba(0,0,0,0.2);
 
 }
+body {
+    background-image: src="src="https://wallpapers.com/images/hd/ghana-national-flag-rlh5sfa2bl7mupig.jpg"  alt="Ghana flag">;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
