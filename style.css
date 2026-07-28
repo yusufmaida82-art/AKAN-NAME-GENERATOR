@@ -1,0 +1,92 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+    padding:40px;
+}
+
+.container{
+
+    max-width:500px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+}
+
+h1{
+
+    text-align:center;
+
+    color:#8e44ad;
+
+}
+
+p{
+
+    text-align:center;
+
+}
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:10px;
+
+}
+
+.gender{
+
+    margin-top:10px;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:20px;
+
+    background:#8e44ad;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#6d2c91;
+
+}
+
+#result{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    color:green;
+
+}
