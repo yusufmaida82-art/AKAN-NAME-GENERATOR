@@ -3,6 +3,10 @@ body{
     background:#f4f4f4;
     margin:0;
     padding:40px;
+     background-image: url("https://wallpapers.com/images/hd/ghana-national-flag-rlh5sfa2bl7mupig.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container{
@@ -20,10 +24,18 @@ body{
     box-shadow:0 0 10px rgba(0,0,0,0.2);
 
 }
-body {
-    background-image: src="src="https://wallpapers.com/images/hd/ghana-national-flag-rlh5sfa2bl7mupig.jpg"  alt="Ghana flag">;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+
+h1{
+
+    text-align:center;
+
+    color:#8e44ad;
+
 }
 
+p{
+
+    text-align:center;
+
+}
