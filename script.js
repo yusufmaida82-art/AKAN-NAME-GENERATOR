@@ -21,20 +21,28 @@ heritageFinder.addEventListener("submit", function (event) {
     }
 
     const gender = choice.value;
+// Validate the inputs
+if (day < 1 || day > 31) {
+    alert("Day must be between 1 and 31.");
+    return;
+}
 
-    // Create a date
-    const birthday = new Date(year, month - 1, day);
+if (month < 1 || month > 12) {
+    alert("Month must be between 1 and 12.");
+    return;
+}
 
-    // Validate the date
-    if (
-        birthday.getDate() !== day ||
-        birthday.getMonth() !== month - 1 ||
-        birthday.getFullYear() !== year
-    ) {
-        alert("Please enter a valid birth date.");
-        return;
-    }
+// Formula variables
+const CC = Math.floor(year / 100);
+const YY = year % 100;
+const MM = month;
+const DD = day;
 
+// Calculate the day of the week using the formula
+let dayNumber = Math.floor(
+    ((CC / 4) - (2 * CC) - 1 + ((5 * YY) / 4) + ((26 * (MM + 1)) / 10) + DD) % 7
+);
+   
     // Days of the week
     const weekdays = [
         "Sunday",
