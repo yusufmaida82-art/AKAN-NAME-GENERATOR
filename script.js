@@ -42,8 +42,6 @@ const DD = day;
 let dayNumber = Math.floor(
     ((CC / 4) - (2 * CC) - 1 + ((5 * YY) / 4) + ((26 * (MM + 1)) / 10) + DD) % 7
 );
-   
-    // Days of the week
     const weekdays = [
         "Sunday",
         "Monday",
@@ -80,7 +78,7 @@ let dayNumber = Math.floor(
     };
 
     // Discover the weekday
-    const bornOn = weekdays[birthday.getDay()];
+   const bornOn = weekdays[dayNumber];
 
     // Find the Akan name
     const akanName = names[gender][bornOn];
