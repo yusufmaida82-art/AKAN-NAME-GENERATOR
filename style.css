@@ -2,8 +2,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background:#f4f4f4;
     margin:0;
-    padding:40px;
-     background-image: url("https://wallpapers.com/images/hd/ghana-national-flag-rlh5sfa2bl7mupig.jpg");
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+     background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("https://wallpapers.com/images/hd/ghana-national-flag-rlh5sfa2bl7mupig.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +20,7 @@ body{
 
     margin:auto;
 
-    background:white;
+    background: rgba(236, 230, 230, 0.92);
 
     padding:30px;
 
@@ -50,7 +55,7 @@ label{
 
 input{
 
-    width:100%;
+    width:90%;
 
     padding: 20px;
 
@@ -59,5 +64,46 @@ input{
 .gender{
 
     margin-top:12px;
+    display :flex;
+    align-items: center;
+    margin-top: 10px;
 
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    justify-content:column;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+button{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:20px;
+
+    background:#8e44ad;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+     transition:0.3s;
+
+}
+
+button:hover{
+
+    background:#6d2c91;
+
+     transform:scale(1.03);
 }
