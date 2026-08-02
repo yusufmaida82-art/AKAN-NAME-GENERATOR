@@ -42,6 +42,7 @@ const DD = day;
 let dayNumber = Math.floor(
     ((CC / 4) - (2 * CC) - 1 + ((5 * YY) / 4) + ((26 * (MM + 1)) / 10) + DD) % 7
 );
+    dayNumber = (dayNumber + 7) % 7;
     const weekdays = [
         "Sunday",
         "Monday",
